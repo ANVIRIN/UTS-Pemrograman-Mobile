@@ -43,7 +43,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun LoginKampusKu(modifier: Modifier = Modifier) {
-    // State untuk menyimpan input pengguna
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
 
@@ -52,7 +51,7 @@ fun LoginKampusKu(modifier: Modifier = Modifier) {
             .fillMaxWidth()
             .padding(16.dp),
     ) {
-        // 1. Judul
+        
         Text(
             text = "Masuk KampusKu",
             style = MaterialTheme.typography.headlineSmall,
@@ -61,7 +60,6 @@ fun LoginKampusKu(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 2. Kolom Email (terhubung dengan state)
         OutlinedTextField(
             value = email,
             onValueChange = { email = it },
@@ -71,7 +69,6 @@ fun LoginKampusKu(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        // 3. Kolom Password (terhubung dengan state)
         OutlinedTextField(
             value = password,
             onValueChange = { password = it },
@@ -82,7 +79,6 @@ fun LoginKampusKu(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 4. Tombol Masuk
         Button(
             onClick = { /* Event saat tombol diklik */ },
             modifier = Modifier.fillMaxWidth(),
