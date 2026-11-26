@@ -66,7 +66,6 @@ fun JadwalKuliahScreen(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(16.dp),
     ) {
-        
         Text(
             text = "Jadwal Kuliah",
             style = MaterialTheme.typography.titleLarge,
