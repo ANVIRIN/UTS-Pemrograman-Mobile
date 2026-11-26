@@ -66,7 +66,7 @@ fun JadwalKuliahScreen(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(16.dp),
     ) {
-        // 1. Header
+        
         Text(
             text = "Jadwal Kuliah",
             style = MaterialTheme.typography.titleLarge,
@@ -76,7 +76,7 @@ fun JadwalKuliahScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(12.dp))
 
-        // 2. Pilihan hari
+        
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly,
@@ -92,7 +92,6 @@ fun JadwalKuliahScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 3. Daftar jadwal (LazyColumn + Card)
         LazyColumn(
             verticalArrangement = Arrangement.spacedBy(12.dp),
             modifier = Modifier.fillMaxSize(),
